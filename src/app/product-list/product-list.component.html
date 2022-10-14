@@ -1,1 +1,15 @@
-<p>product-list works!</p>
+<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 gap-2 justify-content-center mb-5">
+    <div class="col" *ngFor="let product of products; index as productId">
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src={{product.img}} alt="Card image cap">
+            <div class="card-body">
+                <h5 *ngIf="product.description" class="card-title">{{ product.description }}</h5>
+                <p class="card-text"><a routerLink="products/{{productId}}">
+            {{ product.name }}
+    </a></p>
+                <p class="card-text">{{ product.price | currency: "EUR" }}</p>
+
+            </div>
+        </div>
+    </div>
+</div>
