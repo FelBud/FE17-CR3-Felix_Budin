@@ -1,0 +1,44 @@
+.home {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+}
+
+.home .home-img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center;
+    object-position: center;
+}
+
+.home .home-text-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #4b44346e;
+    color: white;
+}
+
+.home .home-text-container .home-headline {
+    font-size: 5vw;
+}
+
+.home .home-text-container .home-text {
+    font-size: 2.5vw;
+    letter-spacing: 0.1vw;
+    font-weight: bold;
+}
+
+.home .home-text-container .btn {
+    font-weight: bold;
+    background: rgb(21, 119, 21);
+    border: 1px solid #D6CBB2;
+}
+
+.home .home-text-container .btn:hover {
+    background: transparent;
+}

@@ -11,14 +11,14 @@ export const products = [
         name: "Pizza Capricciosa",
         description: "Pizza Capricciosa – a true classic of italian Kitchen.",
         img: "assets/img/capricciosa.jpg",
-        price: 15.50,
+        price: 11.20,
         availability: true
         },
         {   
         name: "Pizza Margherita",
-        description: "Named after Queen Margherita in the colours of Ialy.",
+        description: "Named after Queen Margherita in the colours of Italy.",
         img: "assets/img/margherita.jpg",
-        price: 19.50,
+        price: 10.50,
         availability: true
         },
         {
@@ -32,21 +32,21 @@ export const products = [
         name: "Penne al Gorgonzola",
         description: "Cheese as cheese can!",
         img: "assets/img/penne.jpg",
-        price: 12.30,
+        price: 14.10,
         availability: true
         },
         {
         name: "Spaghetti Carbonara",
         description: "Carbonara withcream is a crime.",
         img: "assets/img/carbonara.jpg",
-        price: 15.70,
+        price: 9.70,
         availability: true
         },
         {
         name: "Tiramisu",
         description: "Sweet as heaven.",
         img: "assets/img/tiramisu.jpg",
-        price: 10.20,
+        price: 6.20,
         availability: true
         },
      ];
