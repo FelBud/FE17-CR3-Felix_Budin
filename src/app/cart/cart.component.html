@@ -30,6 +30,15 @@
     </div>
 </div>
 
+<div class="d-flex justify-content-between ps-3 pe-2 border-top">
+    <p class="fw-bold fs-5">Service:</p>
+    <p>{{total * 0.10 | currency: "EUR"}}</p>
+    <p class="fw-bold fs-5">Amount including Discount:</p>
+    <p *ngIf="total > 40">{{total * 0.85 | currency: "EUR"}}</p>
+
+
+</div>
+
 
 <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()">
 
