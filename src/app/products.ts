@@ -25,7 +25,7 @@ export const products = [
         price: 12.90
         },
         {
-        name: "Penna al Gorgonzola",
+        name: "Penne al Gorgonzola",
         description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, porro.",
         img: "assets/img/penne.jpg",
         price: 12.30
