@@ -1,14 +1,4 @@
 <p>cart works!</p>
-<h3>Cart</h3>
-
-
-<div class="cart-item" *ngFor="let item of items">
-
-    <span>{{ item.name }} </span>
-
-    <span>{{ item.price | currency }}</span>
-
-</div>
 
 
 <div class="container">
@@ -40,36 +30,11 @@
 </div>
 
 
-<form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()">
-
-
-    <div>
-
-        <label for="name">
-           
-                Name
-           
-              </label>
-
-        <input id="name" type="text" formControlName="name">
-
-    </div>
-
-
-    <div>
-
-        <label for="address">
-           
-                Address
-           
-              </label>
-
-        <input id="address" type="text" formControlName="address">
-
-    </div>
-
-
-    <button class="button" type="submit">Purchase</button>
-
-
-</form>
+<h1 class="h1 text-center mt-5 mb-3">Order Form</h1>
+<div class="container">
+    <form class="d-flex flex-column justify-content-center align-items-center" [formGroup]="checkoutForm" (ngSubmit)="onSubmit()">
+        <input class="m-2 p-2" type="text" placeholder="Your Name" formControlName="name">
+        <input class="m-2 p-2" type="text" placeholder="Your Address" formControlName="address">
+        <button class="btn btn-primary text-center mt-3 mb-5" type="submit">Purchase</button>
+    </form>
+</div>
