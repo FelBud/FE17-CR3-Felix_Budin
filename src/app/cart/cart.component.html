@@ -9,3 +9,18 @@
     <span>{{ item.price | currency }}</span>
 
 </div>
+
+
+<div class="container">
+    <div class="row">
+        <div class="card" *ngFor="let item of items" style="width: 9rem;">
+            <div class="card-body">
+                <img class="card-img-top" src={{item.img}} alt="Card image cap">
+                <h5 class="card-title">{{ item.name }}</h5>
+                <h6 class="card-subtitle mb-2 text-muted">{{ item.price | currency: "EUR" }}</h6>
+                <div class="d-flex justify-content-between ps-3 pe-2 border-top">
+
+                </div>
+
+            </div>
+        </div>
