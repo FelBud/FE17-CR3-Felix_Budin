@@ -10,6 +10,9 @@ styleUrls: ['./cart.component.css'],
 })
 export class CartComponent implements OnInit {
 items: IProducts[] = [];
+
+total:number = 0;
+
 checkoutForm = this.fb.group({
   name: '',
   address: '',
@@ -30,5 +33,6 @@ clearCart() {
 
 ngOnInit(): void {
   this.items = this.cartService.getItems();
+  this.total =  this.cartService.sumtotal();
 }
 }

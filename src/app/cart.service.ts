@@ -7,6 +7,9 @@ providedIn: 'root',
 export class CartService {
 items: IProducts[] = [];
 
+product: number = 0;  
+total: number= 0;
+
 constructor() {}
 
 addToCart(product: IProducts) {
@@ -20,5 +23,13 @@ getItems() {
 clearCart() {
   this.items = [];
   return this.items;
+}
+
+sumtotal() {
+  this.total = 0;
+  for (let item of this.items) {
+   this.total += item.price;  
+ }
+ return this.total
 }
 }

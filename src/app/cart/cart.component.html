@@ -22,40 +22,45 @@
 
                 </div>
 
+
             </div>
         </div>
+        <p class="fw-bold fs-5">Total Amount:</p>
+        <p>{{total | currency:"EUR" }}</p>
+    </div>
+</div>
 
 
-        <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()">
+<form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()">
 
 
-            <div>
+    <div>
 
-                <label for="name">
+        <label for="name">
            
                 Name
            
               </label>
 
-                <input id="name" type="text" formControlName="name">
+        <input id="name" type="text" formControlName="name">
 
-            </div>
+    </div>
 
 
-            <div>
+    <div>
 
-                <label for="address">
+        <label for="address">
            
                 Address
            
               </label>
 
-                <input id="address" type="text" formControlName="address">
+        <input id="address" type="text" formControlName="address">
 
-            </div>
-
-
-            <button class="button" type="submit">Purchase</button>
+    </div>
 
 
-        </form>
+    <button class="button" type="submit">Purchase</button>
+
+
+</form>
