@@ -5,4 +5,5 @@ export interface IProducts {
     description?: string; // optional property
     img: string;
     availability: boolean;
+    details: string;
     }
